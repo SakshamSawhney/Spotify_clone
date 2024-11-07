@@ -1,0 +1,490 @@
+/* 
+.scrollbar-container::-webkit-scrollbar {
+
+    width: 10px;
+} */
+
+
+
+ 
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* overflow: hidden; */
+    justify-content: space-evenly; 
+    /* align-items: center;  */
+}
+.left{
+    /* border: 2px solid white; */
+    /* position: absolute; */
+    position: relative;
+    width: 21.5vw;
+    height: 97vh;
+    display: flex;
+    left: 0%;
+    flex-direction: column;
+    justify-content:space-around;
+    /* background-color: darkkhaki; */
+    align-self: center;
+    /* transition: all 0.3s ease; */
+    /* display: none; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.right{
+    margin-top: 1.5vh;
+    width: 78vw;
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    position: relative;
+}
+.home{
+    height: 20vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    position: relative;
+}
+.close-hamburger{
+    position: absolute;
+    display: none;
+    right: 7%;
+    top: 10%;
+}
+.close-hamburger img{
+    width: 20px;
+}
+.home li{
+    list-style: none;
+    gap: 17px;
+    margin-top: 19px;
+}
+.library{
+    height:65vh;
+    width: 95%;
+    padding: 30px 10px;
+}
+
+.plus{
+    margin-left: auto;
+}
+/* .card-slide{
+    -ms-overflow-style: none;
+    margin-top: 11px;
+    height: 300px;
+}
+
+.card-slide .heading{
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+.card-slide .para{
+    font-weight: 500;
+    font-size: smaller;
+    margin-bottom: 17px;
+}
+.create-playlist{
+    padding: 20px 15px;
+    margin: 20px 0px;
+}
+
+.browse-podcasts{
+    margin: 20px 0px;
+    padding: 20px 15px;
+} */
+
+.songs-list{
+    margin: 11px 0px;
+    padding: 5px 0px;
+    height: 40vh;
+    /* overflow-y: auto; */
+}
+.songs-list li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #1a1a1a;
+    list-style: none;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.songs-list p{
+    font-size: medium;
+    font-weight: lighter;
+}
+.songs-list span{
+    color: aliceblue;
+    font-weight: bold;
+}
+.lib-play{
+    position: absolute;
+    opacity: 0;
+    /* box-shadow: #555; */
+    top: 5px;
+    left: 23px;
+    transition: all 200ms ease;
+}
+.lib-play-transformed{
+    color: white;
+    opacity: 100%;
+   
+}
+.songs-list img{
+    height: 55px;
+    padding: 3px 10px;
+    border-radius: 25%;
+}
+.songs-list li:hover{
+    background-color: #252525;
+
+    color: white;
+    /* opacity: 50%; */
+}
+.footer{
+    flex-wrap:wrap ;
+    margin: 20px 0px;
+    padding: 20px;
+    font-size: smaller;
+    font-weight:lighter;
+    color: rgb(156, 156, 156);
+    
+}
+.language img{
+    margin-right: 5px;
+}
+.language{
+    margin-left: 17px;
+    color: white;
+    background-color: rgb(8, 8, 8);
+    border: 1px solid rgb(108, 108, 108);
+
+}
+.top-bar{
+    gap :17px;
+    position: sticky;
+    z-index: 1;
+    opacity: 90%;
+    width: 94%;
+    margin: 7px;
+
+}
+.top-bar img[alt="hamburger"]{
+    display: none;
+}
+.top-bar > button.ms-auto:hover{
+    color: white;
+}
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:78vh;
+    width: 99%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 50px;
+    margin: 7px;
+    
+}
+.inner-row{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.footer2{
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 30px 20px;
+    justify-content: space-around;
+    align-items: start;
+    flex-basis: auto;
+}
+.footer2 div{
+    
+    text-align: left;
+    /* padding: 0px 3px; */
+}
+.footer2 li{
+    list-style: none;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 16px 0px;
+    gap: 10px;
+}
+.social-media{
+    gap: 20px;
+}
+.social-media img{
+    width: 15px;
+    height: 15px;
+    /* margin: auto; */
+}
+.social-media-icon:hover{
+    scale: 1.08;
+    background-color: #555;
+}
+.copyright{
+    border-top: 1px solid rgb(62, 62, 62);
+    font-weight: 400;
+    font-size: 12px;
+}
+.card img{
+    width: 100%;
+}
+.card .info{
+    margin: 12px;
+}
+.card h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding :3px
+}
+.card p{
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding :3px;
+}
+
+.play{
+    opacity: 0;
+    right: 11px;
+    top: 150px;
+    position: absolute;
+    transition: all 300ms ease-out;
+}
+.play-transformed{
+    opacity: 1;
+    right: 11px;
+    top: 112px;
+}
+.play:hover{
+    scale:1.05;
+}
+.btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.playbar{
+    /* background-color: white; */
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    height: 9vh;
+    margin:5px 10px;
+    padding: 3px 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    /* align-items: center; */ 
+}
+.playbar-upper{
+    width: 100%;
+    /* justify-content: space-between; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 13px;
+
+}
+
+.play-pause{
+
+    margin: 0px auto;
+    gap: 20px;
+}
+.play-pause div{
+    cursor: pointer;
+}
+.volume{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.volume input{
+    display: none;
+}
+/* #playbar-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(138, 138, 138);
+}
+#playbar-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:rgb(138, 138, 138);
+} */
+
+.progressbar{
+    cursor: pointer;
+   position: relative;
+   /* top: 30%; */
+    width:100%;
+    margin-top: 3px;
+    height: 3px;
+    border-radius: 4px;
+    /* overflow: hidden; */
+    transition: all 0.1s ease;
+    background-color: rgb(222, 221, 221);
+}
+
+.curr-progress{
+    border-radius: 50%;
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    background-color: rgb(222, 221, 221);
+    width: 10px;
+    height: 10px;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+@media (width>1200px) {
+    .left{
+        position: static;
+        /* left: 0%; */
+    }
+}
+@media (width<=1200px) {
+    .left{
+        position: fixed;
+        background-color: #252525;
+        left: -60%;
+        top: 0%;
+        z-index: 3;
+        width: 40vw;
+    }
+    .close-hamburger{
+        display: block;
+    }
+    .right{
+        width: 100vw;
+        margin: 0;
+    }
+    .main{
+        margin: 7px ,0px;
+        padding: 7px ,0px;
+    }
+    .top-bar img[alt="hamburger"]{
+        display: block;
+    }
+    
+    /* .inner-row{
+        padding: ;
+    } */
+}
+
+@media (width<=900px){
+    .left{
+        width: 60vw;
+        left: -100%;
+        height: 98vh;
+    }
+    
+}
+@media (width<=700px) {
+    .footer2{
+        justify-content: space-evenly;
+        margin: 15px 10px;
+        padding: 10px;
+    }
+    .top-bar{
+        width: 91%;
+    }
+    
+}
+@media (width<=600px){
+    .left{
+        width: 85vw;
+        left: -120%;
+        height: 98vh;
+    }
+    .playbar{
+        margin: 5px 0px;
+    }
+    .row{
+        text-align: center;
+    }
+    .inner-row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
+}
+
+@media (width<=420px) {
+    .left{
+        width: 100vw;
+        left: -150%;
+    }
+    .btn2{
+        border: none;
+        border-radius: 25px;
+        padding: 7px;
+        font-weight: 600;
+        font-size: medium;
+    }
+    .card{
+        width: 40vw;
+        height: 25vh;
+    }
+    .card-img{
+        width: 35vw;
+        height: 120px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .row{
+        text-align: center;
+    }
+    .inner-row{
+        /* align-items: stretch; */
+        justify-content: space-around;
+        height: auto;
+    }
+    .footer2{
+        flex-direction: column;
+        align-items: center;  
+        justify-content: start;
+        height: 70%;
+    }
+    .playbar{
+        font-size: 12px;
+    }
+}
+@media (width<=340px){
+    .inner-row{
+        justify-content: center;
+    }
+}

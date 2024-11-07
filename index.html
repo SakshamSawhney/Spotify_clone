@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Redefined</title>
+    <link rel="stylesheet" href="./utility.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="dull">
+    <div class="container">
+        <div class="left">
+            <div class="home bg-grey rounded ">
+                <div class="logo">
+                    <img src="./svg/TH.svg" alt="logo" class="invert">
+                </div>
+                <div class="close-hamburger">
+                    <img src="./svg/close.svg" alt="close-hamburger" class="invert">
+                </div>
+                <ul>
+                    <li class="flex bright"><img src="./svg/home.svg" alt="home" class="invert icon"> Home</li>
+                    <li class="flex"> <img src="./svg/search.svg" alt="search" class="invert icon"> Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded ">
+                <div class="your-library flex  gap1">
+                    <div class="library-logo">
+                        <img src="./svg/library.svg" alt="library" class="invert icon">
+                    </div>
+                    <div class="library-heading">
+                        Your Library
+                    </div>
+                    <div class="plus">
+                        <img src="./svg/plus.svg" alt="plus" class="invert icon-sm ">
+                    </div>
+                </div>
+                <!-- <div class="scrollbar-container card-slide  rounded">
+                        <div class="create-playlist bg-light-grey rounded">
+                            <div class="heading bright">Create your first playlist</div>
+                            <div class="para">It's easy we'll help you</div>
+                            <button class="btn">Create playlist</button> 
+                        </div>
+                        <div class="browse-podcasts bg-light-grey rounded">
+                            <div class="heading bright">Let's find some podcasts to follow</div>
+                            <div class="para">We'll keep you updated on new episodes</div>
+                            <button class="btn">Browse podcasts</button> 
+    
+                        </div>
+                    </div> -->
+                <div class="songs-list rounded scrollbar-container">
+                    <ul>
+    
+                    </ul>
+                    <!-- <ul>
+                            <li>
+                                <img src="./svg/playbar-play.svg" alt="play" style="width: 20px;" class="invert lib-play" >
+                                <img src='./images/dijlit.jpeg' alt='Song'>
+                                <p> <span>Black Suit </span><br>
+                                    Preet Harpal,Fateh</p>
+                            </li>
+                            <li>
+                                <img src="./svg/playbar-play.svg" alt="play" style="width: 20px;" class="invert lib-play" >
+                                <img src="./images/dijlit.jpeg" alt="God Damn">
+                                <p> <span>God Damn</span><br>
+                                    Karan Aujla,Badshah</p>
+                            </li>
+                            <li>
+                                <img src="./svg/playbar-play.svg" alt="play" style="width: 20px;" class="invert lib-play" >
+                                <img src="./images/dijlit.jpeg" alt="Hass Hass">
+                                <p> <span>Hass Hass</span><br>
+                                    Diljit,Sia</p>
+                                </li>
+                            <li>
+                                <img src="./svg/playbar-play.svg" alt="play" style="width: 20px;" class="invert lib-play" >
+                                <img src="./images/dijlit.jpeg" alt="Hathyar">
+                                <p> <span>Hathyar</span><br>
+                                    Gippy Grewal</p>
+                            </li>
+                            <li>
+                                <img src="./svg/playbar-play.svg" alt="play" style="width: 20px;" class="invert lib-play" >
+                                <img src="./images/dijlit.jpeg" alt="Haye Mera Dil">
+                                <p> <span>Haye Mera Dil</span><br>
+                                    Honey Singh,Alfaaz</p>
+                            </li>
+                        </ul> -->
+                </div>
+                <div class="footer flex bg-grey gap1">
+                    <div>Legal</div>
+                    <div>Safety & Privacy Center</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookies</div>
+                    <div>About Ads</div>
+                    <div>Accessibilty</div>
+                </div>
+                <button class="btn flex language"><img src="./svg/language.svg" alt="language" class="invert icon-sm">
+                    English</button>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="top-bar flex  p1 bg-grey rounded">
+                <img src="./svg/hamburger.svg" alt="hamburger" class="invert icon">
+                <img src="./svg/prev.svg" alt="previous" class="invert icon-sm">
+                <img src="./svg/next.svg" alt="next" class="invert icon-sm">
+                <button class="btn btn2 ms-auto bg-grey dull">Sign up</button>
+                <button class="btn btn2 ">Log in</button>
+            </div>
+            <div class="main  bg-grey scrollbar-container  rounded">
+                <!-- <div class="row m1 p1 popular-artists ">
+                    <h2 class="bright">Popular artists</h2>
+                    <div class="inner-row flex scrollbar-container">
+                        <div class="card">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+                            <div class="card-img">
+                                <img src="./images/karan-aujla.jpeg" alt="karan-aujla artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Karan Aujla</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img">
+                                <img src="./images/dijlit.jpeg" alt="diljit artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Diljit</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+                            <div class="card-img">
+                                <img src="./images/honey-singh.jpeg" alt="honey-singh artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Honey Singh</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img">
+                                <img src="./images/gippy-grewal.jpg" alt="gippy-grewal artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Gippy Grewal</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img">
+                                <img src="./images/j-star.jpg" alt="j-star artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">J-star</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img">
+                                <img src="./images/kk.jpeg" alt="kk artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">KK</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img">
+                                <img src="./images/imran-khan.jpeg" alt="imran-khan artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Imran Khan</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="row m1 p1 popular-artists ">
+                    <h2 class="bright">Popular albums</h2>
+                    <div class="inner-row flex scrollbar-container">
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/karan-aujla.jpeg" alt="karan-aujla artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Karan Aujla</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/dijlit.jpeg" alt="diljit artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Diljit</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/honey-singh.jpeg" alt="honey-singh artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Honey Singh</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/gippy-grewal.jpg" alt="gippy-grewal artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Gippy Grewal</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/j-star.jpg" alt="j-star artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">J-star</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/kk.jpeg" alt="kk artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">KK</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2 ">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/imran-khan.jpeg" alt="imran-khan artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Imran Khan</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row m1 p1 popular-artists ">
+                    <h2 class="bright">Popular albums</h2>
+                    <div class="inner-row flex scrollbar-container">
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/karan-aujla.jpeg" alt="karan-aujla artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Karan Aujla</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/dijlit.jpeg" alt="diljit artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Diljit</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/honey-singh.jpeg" alt="honey-singh artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Honey Singh</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/gippy-grewal.jpg" alt="gippy-grewal artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Gippy Grewal</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/j-star.jpg" alt="j-star artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">J-star</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/kk.jpeg" alt="kk artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">KK</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="card card2 ">
+                            <img src="./svg/play.svg" alt="play" style="width: 50px;" class="play">
+    
+                            <div class="card-img card2-img">
+                                <img src="./images/imran-khan.jpeg" alt="imran-khan artist">
+                            </div>
+                            <div class="info">
+                                <h3 class="bright">Imran Khan</h3>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2 flex">
+                    <div class="company">
+                        <h4 class="bright">Company</h4>
+                        <ul>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="communities">
+                        <h4 class="bright">Communities</h4>
+                        <ul>
+                            <li>For Artists
+                            <li>
+                            <li>Developers
+                            <li>
+                            <li>Advertising
+                            <li>
+                            <li>Investors
+                            <li>
+                            <li>Vendors
+                            <li>
+                        </ul>
+                    </div>
+                    <div class="useful-links">
+                        <h4 class="bright">Useful links</h4>
+                        <ul>
+                            <li>Support</li>
+                            <li>Free Mobile Apps</li>
+                        </ul>
+                    </div>
+                    <div class="plans">
+                        <h4 class="bright">Plans</h4>
+                        <ul>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </ul>
+                    </div>
+                    <div class="social-media flex">
+                        <div class="social-media-icon">
+                            <img src="./svg/insta.svg" alt="instagram" class="invert">
+                        </div>
+                        <div class="social-media-icon">
+                            <img src="./svg/twitter.svg" alt="twitter" class="invert">
+                        </div>
+                        <div class="social-media-icon">
+                            <img src="./svg/fb.svg" alt="facebook" class="invert">
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright m1 p1">
+                    ©️ 2024 Spotify
+                </div>
+            </div>
+            <div class="playbar flex rounded bg-grey">
+                <div class="playbar-upper">
+    
+                    <div class="song-info">
+                        song-info
+                    </div>
+                    <div class="play-pause flex">
+                        <div id="playbar-prev">
+                            <img src="./svg/playbar-prev.svg" alt="prev" class="icon-sm invert">
+                        </div>
+                        <div id="playbar-play">
+                            <img src="./svg/playbar-play.svg" alt="play/pause" class="icon invert">
+                        </div>
+                        <div id="playbar-next">
+                            <img src="./svg/playbar-next.svg" alt="next" class="icon-sm invert">
+                        </div>
+                    </div>
+                    <div class="song-time">
+                        00:00 / 00:00
+                    </div>
+                    <div class="volume">
+                        <img src="./svg/volume.svg" alt="volume" class="invert icon">
+                        <div class="range">
+                            <input type="range" name="volume" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar">
+                    <div class="curr-progress">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right ended -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

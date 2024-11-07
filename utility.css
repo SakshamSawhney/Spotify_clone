@@ -1,0 +1,125 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+.bg-grey{
+    background-color: rgb(25, 25, 25);
+}
+.invert{
+    filter: invert(1);
+}
+.bright{
+    color: white;
+}
+.rounded{
+    border-radius: 16px;
+}
+
+.bg-light-grey{
+    background-color: rgb(46, 46, 46);
+
+}
+.gap1{
+    gap: 10px;
+}
+
+.btn{
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-weight: 600;
+    /* cursor: pointer; */
+}
+.btn2{
+    border: none;
+    border-radius: 25px;
+    padding: 15px 27px;
+    font-weight: 600;
+    font-size:medium;
+}
+.ms-auto{
+    margin-left: auto;
+}
+.m1{
+  margin: 7px;  
+}
+
+.icon{
+    width: 23px;
+}
+.icon-sm{
+    width: 16px;
+}
+.dull{
+    color: rgb(173, 173, 173);
+}
+.m2{
+    margin :10px;
+}
+.p1{
+    padding: 12px 20px;
+}
+.card{
+    position: relative;
+}
+.card:hover{
+    background-color: rgb(42, 41, 41);
+}
+.card-img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow-y: hidden;
+    margin: 12px;
+}
+
+.card2-img{
+    border-radius: 10px;
+}
+.social-media-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrollbar-container {
+    overflow-y: scroll;
+    /* scrollbar-width: none;  */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    /* transition: all 1s ease; */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.scrollbar-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* .show-scrollbar {
+    scrollbar-width: thin;
+} */
+.show-scrollbar::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+
+
+.show-scrollbar::-webkit-scrollbar-track {
+    background: #6b6b6b; 
+    border-radius: 20px;
+}
+
+.show-scrollbar::-webkit-scrollbar-thumb {
+    background: #282828; 
+    border-radius: 20px;
+}
+
+.show-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #353535; 
+    border-radius: 20px;
+}
+.opacity-dull{
+    opacity:30%;
+}
